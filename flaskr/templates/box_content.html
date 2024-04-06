@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Content</title>
+    <!-- Include Box UI elements stylesheet -->
+    <link rel="stylesheet" href="https://cdn01.boxcdn.net/platform/elements/19.0.0/en-US/explorer.css">
+</head>
+<body>
+<h1>Box Content</h1>
+<div class="container" style="height:600px"></div>
+<!-- Include Box UI elements JavaScript -->
+<script src="https://cdn01.boxcdn.net/platform/elements/19.0.0/en-US/explorer.js"></script>
+<script>
+        var accessToken = '{{ access_token }}';
+        var contentExplorer = new Box.ContentExplorer();
+        var folderId = '0';
+        contentExplorer.show(folderId, accessToken, {
+                container: ".container",
+            });
+    </script>
+</body>
+</html>
