@@ -4,7 +4,7 @@ This is a demo application that authenticates against Box.com and then
 shows the files and folders for the authenticated user.
 
 Retrieve your Box.com credentials
-1. Login to your Box account and click on "Dev Console" in the bottom left.
+1. Login to your Box account and got to https://app.box.com/developers/console
 2. Create a new application using OAuth2.
 3. Copy the Client ID and Client Secret.
 
